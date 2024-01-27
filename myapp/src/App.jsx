@@ -1,4 +1,5 @@
 import { Login } from "./Login";
+import { UncontrolledFOrm } from "./uncontrolledForm.jsx";
 
 
 function handleLogin(logindata){
@@ -8,7 +9,7 @@ export function App() {
     return (
         <div>
            
-           <Login onLogin={handleLogin}/>
+           <UncontrolledFOrm/>         
         </div>
         
     );
