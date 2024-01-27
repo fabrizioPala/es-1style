@@ -1,13 +1,11 @@
 export function UncontrolledFOrm(){
     function handleSub(e){
         e.preventDefault()
-        const username= e.target.elements.namedItem("username").value
-        const password= e.target.elements.namedItem("password").value
-        const checkbox= e.target.elements.namedItem("session").checked
+        const formData= new FormData(e.target)
         const data={
-         username,
-         password,
-         checkbox
+         username: formData.get("username"),
+         password: formData.get("password"),
+         checkbox:formData.get("session")==="on" ? true:false
         }
         console.log(data)
     }
