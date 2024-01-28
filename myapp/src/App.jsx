@@ -1,5 +1,6 @@
-import { FocusableInput } from "./FocusableInput .jsx";
-
+import { Login } from "./Login";
+import { Welcome } from "./Welcome.jsx";
+import { UncontrolledFOrm } from "./uncontrolledForm.jsx";
 
 
 function handleLogin(logindata){
@@ -9,7 +10,7 @@ export function App() {
     return (
         <div>
            
-           <FocusableInput/>         
+           <Welcome name={"Jhon"}/>         
         </div>
         
     );
